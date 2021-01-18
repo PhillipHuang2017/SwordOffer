@@ -12,7 +12,7 @@ def createToc():
         writeStr = "[%s](%s)  \n"%(name, filename)
         writeLines.append(writeStr)
     
-    with open("./TOC.md", "w") as tocFile:
+    with open("./TOC.md", "w", encoding='utf-8') as tocFile:
         tocFile.writelines(writeLines)
 
 if __name__ == "__main__":
