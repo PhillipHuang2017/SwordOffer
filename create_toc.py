@@ -9,7 +9,7 @@ def createToc():
     writeLines = []
     for filename in fileList:
         name = ".".join(filename.split(".")[:-1])
-        writeStr = "[%s](%s)\r"%(name, filename)
+        writeStr = "[%s](%s)  \n"%(name, filename)
         writeLines.append(writeStr)
     
     with open("./TOC.md", "w") as tocFile:
